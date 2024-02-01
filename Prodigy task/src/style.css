@@ -1,0 +1,363 @@
+body {
+    background: linear-gradient(45deg, black, blue, pink);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, blue, blueviolet);
+    border-radius: 5%;
+}
+
+header {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height:50px;
+    left:0;
+    top: 0px;
+    z-index: 1;
+    transition: all 0.9s;
+}
+
+.active {
+        background-color: rgba(0, 0, 0, 0.755);
+}
+
+.title {
+    padding: 5px 10px;
+    margin: 15px;
+    margin-left: 32px;
+    margin-bottom: 20px;
+    position: fixed;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    top: -5px;
+    left: 50px;
+    transition: all 0.3s;
+}
+
+.title:hover {
+    background: linear-gradient(45deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.nav-bar {
+    overflow:hidden;
+    position: fixed;
+    right: 70px;
+    top: 20px;
+    width: 20%;
+    height: 50px;
+}
+
+.nav-bar a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    float: top;
+    height:20px;
+    transition: all 0.3s;
+}
+
+.nav-bar a:hover {
+    border-bottom: solid 5px #fff;
+    border-radius: 5%;
+}
+
+.line-break {
+    height: 1px;
+    background-color: #fff;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+    top: 42px;
+}
+
+.back {
+    position: fixed;
+    right: -20px;
+    top: 50px;
+}
+
+.back img {
+    height: 700px;
+    width: 400px;
+    overflow: hidden;
+}
+
+#first-container {
+    color: blanchedalmond;
+    position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    height: 350px;
+    top: 60px;
+    left: 5%;
+    right: 5%;
+}
+
+#slogan {
+    text-align: end;
+    font-size: 75px;
+    top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#slogan p {
+    bottom: 0;
+    
+}
+
+#snippet {
+    position: relative;
+}
+
+#snippet p {
+    text-align: start;
+    position: relative;
+    font-size: 30px;
+    top: 230px;
+    padding-left: 20px;
+}
+
+
+#graphics {
+    height: 150px;
+    top: 0px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 90%;
+    top: 50px;
+    right: 5%;
+    left: 5%;
+}
+
+.box {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box1 {
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 15%;
+}
+
+.box2 {
+    width: 25%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.box3 {
+    width: 25%;
+}
+
+.box4 {
+    width: 25%;
+}
+
+.element {
+    height: 70px;
+    width: 70px;
+}
+
+.box1 .element {
+    background: linear-gradient(35deg, pink, rgb(33, 110, 209));
+}
+
+.box2 .e1, .box2 .e6 {
+    flex-basis: 150px;
+}
+
+.box2 .e4, .box2 .e5 {
+    background: linear-gradient(35deg, rgb(33, 110, 209), rgb(38, 38, 156));
+}
+
+.box2 .e2, .box2 .e3 {
+    background: linear-gradient(35deg, rgb(38, 38, 156), rgb(59, 59, 207));
+}
+
+.box3 .e1, .box3 .e5 {
+    background: linear-gradient(35deg, rgb(59, 59, 207), blue);
+}
+
+.box3 .e2, .box3 .e6 {
+    background: linear-gradient(35deg, blue, aqua);
+}
+
+.box3 .e4, .box3 .e3 {
+    background: linear-gradient(35deg, aqua, rgb(12, 246, 149));
+}
+
+.box4 .e1, .box4 .e5 {
+    background: linear-gradient(35deg, rgb(12, 246, 149), rgb(17, 153, 83));
+}
+
+.box4 .e2, .box4 .e6 {
+    background: linear-gradient(35deg, rgb(17, 153, 83), rgb(11, 90, 143));
+}
+
+.box4 .e3, .box4 .e7 {
+    background: linear-gradient(35deg, rgb(11, 90, 143), rgb(89, 2, 228));
+}
+
+.box4 .e4, .box4 .e8 {
+    background: linear-gradient(35deg, rgb(89, 2, 228), rgb(18, 8, 204));
+}
+
+.content {
+    position: relative;
+    width: 85%;
+    top: 70px;
+    right: 7.5%;
+    left: 7.5%;
+    display: block;
+}
+
+.content .head {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    left: 70px;
+    color: #fff;
+}
+
+.gallery {
+    height: 230px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2px;
+}
+
+#second-container .gallery .image {
+    background-color: beige;
+    border-radius: 5%;
+    transition: all 0.3s ease-in;
+}
+
+#second-container .gallery .image :hover {
+    background-color: blueviolet;
+}
+
+#third-container {
+    position: relative;
+    top: 240px;
+    color: #fff;
+}
+
+#third-container .gallery {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image {
+    height: 325px;
+    width: 325px;
+}
+
+.image img {
+    height: 325px;
+    width: 325px;
+    overflow: hidden;
+    border-radius: 5%;
+    transition: all 0.3s;
+}
+
+#third-container .gallery .image :hover {
+    transform: scale(1.04);
+}
+
+.image div {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    top: -35px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    height: 250px;
+    bottom: 0px;
+    margin: 0;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    top: 800px;
+    color: aliceblue;
+}
+
+.f {
+    position: relative;
+    width: 15%;
+}
+
+#f1 {
+    font-size: 25px;
+    position: inherit;
+    top: 30px;
+    font-weight: 100;
+}
+
+#f2 {
+    font-size: 16px;
+    position: inherit;
+    top: 80px;
+}
+
+#f3 {
+    font-size: 15px;
+    position: inherit;
+    top: 120px;
+}
+
+#f4 {
+    font-size: 30px;
+    position: inherit;
+    top: -30px;
+    left: 1190px;
+    width: 102px;
+}
+
+#f4:hover {
+    background: linear-gradient(45deg, aqua, rgb(8, 58, 8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+#f5 {
+    display: flex;
+    gap: 5px;
+    top: 25px;
+    left: 1080px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
